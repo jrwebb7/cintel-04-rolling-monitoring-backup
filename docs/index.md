@@ -1,6 +1,13 @@
-# Rolling Monitoring of System Metrics
+# Rolling Monitoring of Fellowship Onboarding
 
-Continuous Intelligence | Project 04 | Example Report
+## Project Plan
+
+This project will compare three-day and five-day rolling windows using
+simulated daily onboarding data. The goal is to see how quickly each window
+reveals a growing backlog or a decline in on-time task completion.
+
+The results below come from the starter system-metrics dataset. They show
+how the pipeline works before it is applied to the onboarding data.
 
 ## Overview
 
@@ -13,7 +20,7 @@ recent behavior while reducing short-term variation.
 
 ## Data
 
-The example dataset contains 15 time-ordered observations
+The example dataset contains 60 time-ordered observations
 collected at five-minute intervals.
 
 Each observation includes:
@@ -23,7 +30,7 @@ Each observation includes:
 - Number of errors.
 - Total latency in milliseconds.
 
-[View Example Dataset](https://github.com/denisecase/cintel-04-rolling-monitoring/blob/main/data/system_metrics_timeseries.csv)
+[View Example Dataset](https://github.com/jrwebb7/cintel-04-rolling-monitoring-custom/blob/main/data/system_metrics_timeseries.csv)
 
 ## Methods
 
@@ -54,15 +61,15 @@ The rolling metrics show several changes in activity.
 | 08:50 |           145.00 |           2.33 |
 | 09:10 |           198.33 |           7.67 |
 
-[View Rolling Monitoring Results](https://github.com/denisecase/cintel-04-rolling-monitoring/blob/main/artifacts/rolling_metrics.csv)
+[View Rolling Monitoring Results](https://github.com/jrwebb7/cintel-04-rolling-monitoring-custom/blob/main/artifacts/rolling_metrics.csv)
 
 ## Interpretation
 
 The rolling averages reveal periods of increasing
 activity, declining activity, and renewed growth.
 
-Toward the end of the observation period,
-request counts and error counts both increase.
+From 08:50 to 09:10, both the rolling request count
+and the rolling error count increase.
 
 This suggests that growing workload may coincide
 with additional errors, although the data
@@ -98,9 +105,9 @@ may be useful.
 
 ## Project Links
 
-- [GitHub Repository](https://github.com/denisecase/cintel-04-rolling-monitoring)
-- [Example Pipeline](https://github.com/denisecase/cintel-04-rolling-monitoring/blob/main/src/cintel/rolling_monitor.py)
-- [Results and Artifacts](https://github.com/denisecase/cintel-04-rolling-monitoring/tree/main/artifacts)
+- [GitHub Repository](https://github.com/jrwebb7/cintel-04-rolling-monitoring-custom)
+- [Example Pipeline](https://github.com/jrwebb7/cintel-04-rolling-monitoring-custom/blob/main/src/cintel/rolling_monitor.py)
+- [Results and Artifacts](https://github.com/jrwebb7/cintel-04-rolling-monitoring-custom/tree/main/artifacts)
 
 ## Project Resources
 
