@@ -101,7 +101,7 @@ may be useful.
 - [**Project Instructions**](project-instructions.md)
 - [**Glossary**](glossary.md)
 - [**API**](api.md)
-- [**Reactive App**](./app/index.html)
+- [**Run the Reactive App**](https://github.com/jrwebb7/cintel-04-rolling-monitoring-custom/blob/main/README.md#run-the-starter-example)
 
 ## Project Links
 
